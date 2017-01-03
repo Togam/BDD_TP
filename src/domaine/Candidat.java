@@ -45,6 +45,33 @@ public class Candidat {
 		this.setListeVoeux(new ArrayList<Voeu>());
 	}
 
+	/**
+	 * @param idcand
+	 * @param nom
+	 * @param prenom
+	 * @param datenais
+	 * @param rang
+	 * @param noteFinale
+	 */
+	public Candidat(final int idcand, final String nom, final String prenom, final Date datenais, final int rang,
+			final double noteFinale) {
+		this.idcand = idcand;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.datenais = datenais;
+		this.rang = rang;
+		this.noteFinale = noteFinale;
+		this.setPhoto(photo);
+		this.listeNotes = new ArrayList<Note>();
+		this.setListeVoeux(new ArrayList<Voeu>());
+	}
+
+	/**
+	 * Constructeur vide
+	 */
+	public Candidat() {
+	}
+
 	public int getIdcand() {
 		return idcand;
 	}
@@ -117,7 +144,9 @@ public class Candidat {
 		this.listeVoeux = listeVoeux;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

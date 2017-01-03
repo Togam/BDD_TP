@@ -40,7 +40,7 @@ public class CandidatMapper {
 		ResultSet rs = ps.executeQuery();
 		rs.next();
 		Candidat candidat = new Candidat(id, rs.getString(2), rs.getNString(3),
-				rs.getDate(4), rs.getInt(5), rs.getDouble(6), this.findPhotoById(id));
+				rs.getDate(4), rs.getInt(5), rs.getDouble(6) /*,this.findPhotoById(id)*/);
 		NoteMapper noteMapper = NoteMapper.getInstance();
 		candidat.setListeNotes(noteMapper.getListeNotesDunCandidat(candidat));
 		VoeuMapper voeuMapper = VoeuMapper.getInstance();

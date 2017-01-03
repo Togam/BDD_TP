@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import domaine.Candidat;
 import persistance.Oracle;
 import persistance.mapper.CandidatMapper;
-import vues.JFramePreadmin;
+import vues.JFrameConnexion;
 
 /**
  * @author six Classe Main
@@ -18,14 +18,14 @@ public class Main {
 	 */
 	public static void main(String[] args) throws SQLException {
 
-		Oracle.setPassword("g6xgg1ya");
-		Oracle.setUsername("six");
+		Oracle.setPassword("");
+		Oracle.setUsername("");
 		
-		CandidatMapper candidatMapper = CandidatMapper.getInstance();
-		Candidat candidat = candidatMapper.findById(712);
-		System.out.println(candidat.toString());
+//		CandidatMapper candidatMapper = CandidatMapper.getInstance();
+//		Candidat candidat = candidatMapper.findById(712);
+//		System.out.println(candidat.toString());
 		
-		JFramePreadmin framePreadmin = new JFramePreadmin();
+		JFrameConnexion framePreadmin = new JFrameConnexion();
 	}
 
 }

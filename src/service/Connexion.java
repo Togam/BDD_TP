@@ -15,7 +15,7 @@ import vues.JFramePrincipale;
  * @author six
  * Service concernant toutes les actions de connexion de l'application
  */
-public abstract class Connexion {
+public class Connexion {
 
 	/**
 	 * permet de connecter un utilisateur

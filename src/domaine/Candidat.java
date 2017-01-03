@@ -152,11 +152,14 @@ public class Candidat {
 	@Override
 	public String toString() {
 		String infos = "ID CANDIDAT : " + this.idcand + "\nNOM : " + this.nom + "\nPRENOM : " + this.prenom
-				+ "\nDATE DE NAISSANCE : " + this.datenais.toString() + "\nRANG DU CLASSEMENT : " + this.rang
-				+ "\nMOYENNE AU CONCOURS : " + this.noteFinale + "\nNOTES OBTENUES AU CONCOURS : ";
+				+ "\nDATE DE NAISSANCE : " + this.datenais.toString() + "\n\nRANG DU CLASSEMENT : " + this.rang
+				+ "\nMOYENNE AU CONCOURS : " + this.noteFinale + "\n\nNOTES OBTENUES AU CONCOURS : ";
+				infos+="\n";
 		for (Note note : this.listeNotes) {
 			infos += note.toString() + "\n";
 		}
+		infos += "\n";
+		infos += "VOEUX FORMULES : \n";
 		for (Voeu voeu : this.listeVoeux) {
 			infos += voeu.toString() + "\n";
 		}

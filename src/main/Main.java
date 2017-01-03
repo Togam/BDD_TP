@@ -18,12 +18,8 @@ public class Main {
 	 */
 	public static void main(String[] args) throws SQLException {
 
-		Oracle.setPassword("");
-		Oracle.setUsername("");
-		
-//		CandidatMapper candidatMapper = CandidatMapper.getInstance();
-//		Candidat candidat = candidatMapper.findById(712);
-//		System.out.println(candidat.toString());
+		Oracle.setPassword("g6xgg1ya");
+		Oracle.setUsername("six");
 		
 		JFrameConnexion framePreadmin = new JFrameConnexion();
 	}

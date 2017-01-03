@@ -42,6 +42,6 @@ public class Epreuve {
 
 	@Override
 	public String toString() {
-		return this.idep + " " + this.intitule + " coeff " + this.coef;
+		return this.idep + ", " + this.intitule + ", coeff " + this.coef;
 	}
 }

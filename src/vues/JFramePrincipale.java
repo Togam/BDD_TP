@@ -23,7 +23,7 @@ public class JFramePrincipale extends JFrame {
 		setVisible(true);
 		JTextArea label = new JTextArea();
 		label.setText(INTRO+candidat.toString());
-		label.setEnabled(false);
+//		label.setEnabled(false);
 		add(label);
 	}
 }

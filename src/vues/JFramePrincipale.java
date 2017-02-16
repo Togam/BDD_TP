@@ -1,7 +1,6 @@
 package vues;
 
 import javax.swing.JFrame;
-import javax.swing.JTextArea;
 
 import domaine.Candidat;
 
@@ -12,7 +11,8 @@ import domaine.Candidat;
 public class JFramePrincipale extends JFrame {
 
 	private static final long serialVersionUID = 2288096867493671588L;
-	final static String INTRO = "INFORMATIONS DU CANDIDAT \n\n";
+
+
 
 	public JFramePrincipale(final Candidat candidat) {
 		setTitle("TP BDD");
@@ -20,10 +20,10 @@ public class JFramePrincipale extends JFrame {
 		setResizable(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		
+		JPanelCandidat panelCandidat = new JPanelCandidat(candidat);
+		add(panelCandidat);
+		
 		setVisible(true);
-		JTextArea label = new JTextArea();
-		label.setText(INTRO+candidat.toString());
-//		label.setEnabled(false);
-		add(label);
 	}
 }

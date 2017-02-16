@@ -1,11 +1,12 @@
 package persistance.mapper;
 
+import Oracle;
+
 import java.sql.Blob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import persistance.Oracle;
 import domaine.Candidat;
 
 /**

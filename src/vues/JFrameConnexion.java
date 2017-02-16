@@ -8,7 +8,6 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,7 +22,7 @@ import service.Connexion;
  * @author six
  * la fenetre de connexion
  */
-public class JFrameConnexion extends JFrame implements ActionListener,KeyListener{
+public class JFrameConnexion extends JFrame implements ActionListener{
 
 	/**
 	 * 
@@ -114,12 +113,6 @@ public class JFrameConnexion extends JFrame implements ActionListener,KeyListene
 	}
 
 	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		
 	}

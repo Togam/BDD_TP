@@ -5,11 +5,10 @@ package service;
 
 import javax.swing.JFrame;
 
-import domaine.Candidat;
 import persistance.mapper.CandidatMapper;
-import proxy.CandidatProxy;
 import vues.JFrameConnexion;
 import vues.JFramePrincipale;
+import domaine.Candidat;
 
 /**
  * @author six
@@ -28,7 +27,6 @@ public class Connexion {
 		try{
 			CandidatMapper c = CandidatMapper.getInstance();
 			Candidat candidat = c.findById(identifiant);
-			CandidatProxy cp = new CandidatProxy(identifiant);
 			
 			System.out.println(candidat.toString());
 			
